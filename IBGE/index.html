@@ -1,27 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IBGE</title>
+    <title>API IBGE</title>
     <script src="script.js"></script>
-</head>
+
+  
 <body>
-    <h1>Dados IBGE</h1>
-    <h2>Escolha o Estado Desejado
-    <select id="dados" >
-        <option >Carregando estados </option>
-    </select>
 
-    <h2> Cidade Desejada</h2>
-    <select id="cidade">
-    <option>Cidade Desejada</option>
-    </select>
-    <button id="clique">Ver mais</button>
+    <div>
 
-    <p id="exibir"></p>
+        <h1>Escolha o Estado Desejado</h1>
+        <select id="dados" onchange="getMunicipio()">
+            <option>
+                Escolha um estado
+            </option>
+        </select>
+    </div>
+    <div>
+        <h2> Cidade Desejada</h2>
+        <select id="cidade">
+        <option>Cidade Desejada</option>
+        </select>
 
-
+        <button id="clique">Ver mais</button>
+    </div>
+  <div>
+     <p class="paragrafo"></p>
+     <br>
+     <p class="paragrafo"></p>
+     <br>
+     <p class="paragrafo"></p>
+    </div>
 </body>
 </html>
